@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTIONÁRIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+</head>
+<body>
+        <div class="container">
+        <h1>QUESTIONÁRIO</h1>
+        <div id="question1" class="question" >
+            <p>1. Quando faz um trabalho em grupo, você é aquele(a) que:</p><br>
+            <input type="radio" name="q1" value="1"> Fica preocupado(a) com o bem-estar do grupo.<br>
+            <input type="radio" name="q1" value="2"> Organiza tudo o que tem que ser feito.<br>
+            <input type="radio" name="q1" value="3"> Sugere coisas novas e diferentes.<br>
+            <input type="radio" name="q1" value="4"> Gosta das atividades mais práticas.<br>
+            <button onclick="showNextQuestion()">Próxima Pergunta</button>
+        </div>
+    
+    <div id="question2" class="question" style="display: none;">
+        <p>2. Nas horas vagas o que você gosta de fazer?</p><br>
+        <input type="radio" name="q2" value="1"> Descansar para reestabelecer as energias.<br>
+        <input type="radio" name="q2" value="2"> Colocar em dias meus afazeres e planejar minha semana.<br>
+        <input type="radio" name="q2" value="3"> Acessar a internet e as redes sociais.<br>
+        <input type="radio" name="q2" value="4"> Fazer atividades físicas e manter uma boa alimentação.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question3" class="question" style="display: none;">
+        <p>3. O que você mais valoriza:</p><br>
+        <input type="radio" name="q3" value="1"> O bem-estar.<br>
+        <input type="radio" name="q3" value="2"> A comunicação.<br>
+        <input type="radio" name="q3" value="3"> A criatividade.<br>
+        <input type="radio" name="q3" value="4"> Atividades ao ar livre.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question4" class="question" style="display: none;">
+        <p>4. Em qual destas situações você se sairia melhor?</p><br>
+        <input type="radio" name="q4" value="1"> Interagindo diretamente com as pessoas e seus problemas.<br>
+        <input type="radio" name="q4" value="2"> Ouvindo as pessoas e propondo soluções.<br>
+        <input type="radio" name="q4" value="3"> Construindo e criando algo novo.<br>
+        <input type="radio" name="q4" value="4"> Planejando e avaliando os resultados de outras pessoas.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question5" class="question" style="display: none;">
+        <p>5. Com qual área você se dá melhor?</p><br>
+        <input type="radio" name="q5" value="1"> Biologia e Química.<br>
+        <input type="radio" name="q5" value="2"> Linguagens e Redação.<br>
+        <input type="radio" name="q5" value="3"> Matemática.<br>
+        <input type="radio" name="q5" value="4"> Educação Física.<br>
+        <button onclick="showNextQuestion()"> Próxima Pergunta.</button>
+    </div>
+
+    <div id="question6" class="question" style="display: none;">
+        <p>6. A sua viagem ideal seria para:</p><br>
+        <input type="radio" name="q6" value="1"> Uma excursão solidária.<br>
+        <input type="radio" name="q6" value="2"> Capitais e grandes centros urbanos.<br>
+        <input type="radio" name="q6" value="3"> Lugares com patrimônios históricos.<br>
+        <input type="radio" name="q6" value="4"> Lugares culturais com boa gastronomia.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question7" class="question" style="display: none;">
+        <p>7. De modo geral, você evita ou não gosta de:</p><br>
+        <input type="radio" name="q7" value="1"> Fazer as coisas de qualquer jeito.<br>
+        <input type="radio" name="q7" value="2"> Desorganização e atrasos.<br>
+        <input type="radio" name="q7" value="3"> Ficar sem aparelhos eletrônicos.<br>
+        <input type="radio" name="q7" value="4"> Atividades monótonas.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question8" class="question" style="display: none;">
+        <p>8. Você gosta mais de atividades que envolvam:</p><br>
+        <input type="radio" name="q8" value="1"> Cuidados.<br>
+        <input type="radio" name="q8" value="2"> Estratégias.<br>
+        <input type="radio" name="q8" value="3"> Tecnologias.<br>
+        <input type="radio" name="q8" value="4"> Hábitos saudáveis.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunt.</button>
+    </div>
+
+    <div id="question9" class="question" style="display: none;">
+        <p>9. Você prefere trabalhar em seu dia-a-dia com:</p><br>
+        <input type="radio" name="q9" value="1"> Fazer o bem ao próximo.<br>
+        <input type="radio" name="q9" value="2"> Melhorar a vida de alguém.<br>
+        <input type="radio" name="q9" value="3"> Tornar a vida de todos mais simples e confortável.<br>
+        <input type="radio" name="q9" value="4"> Prevenir problemas de saúde das pessoas.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question10" class="question" style="display: none;">
+        <p>10. Seus amigos te descreveriam como uma pessoa:</p><br>
+        <input type="radio" name="q10" value="1"> Cuidadosa.<br>
+        <input type="radio" name="q10" value="2"> Organizada.<br>
+        <input type="radio" name="q10" value="3"> Antenada.<br>
+        <input type="radio" name="q10" value="4"> Habilidosa.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question11" class="question" style="display: none;">
+        <p>11. Em conflitos, você...</p><br>
+        <input type="radio" name="q11" value="1"> Evita sempre que pode.<br>
+        <input type="radio" name="q11" value="2"> Tenta ser o mais civilizado(a) possível.<br>
+        <input type="radio" name="q11" value="3"> Analisa e usa a razão para resolver.<br>
+        <input type="radio" name="q11" value="4"> É prático, gosta de conversar e resolver.<br>
+        <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question12" class="question" style="display: none;">
+        <p>12. O emprego dos seus sonhos é aquele no qual:</p><br>
+            <input type="radio" name="q12" value="1"> Você ajuda e cuida das pessoas.<br>
+            <input type="radio" name="q12" value="2"> Você faria planejamentos para resolver problemas.<br>
+            <input type="radio" name="q12" value="3"> Você trabalharia mais com máquinas e projetos do que com pessoas.<br>
+            <input type="radio" name="q12" value="4"> Você colocaria a mão na massa, trabalhando em equipe.<br>
+            <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question13" class="question" style="display: none;">
+        <p>13. O que mais te incomoda? É quando as pessoas...</p><br>
+            <input type="radio" name="q13" value="1"> São descuidadas com as regras.<br>
+            <input type="radio" name="q13" value="2"> Fazem coisas de última hora.<br>
+            <input type="radio" name="q13" value="3"> Não gostam de aprender ou inovar.<br>
+            <input type="radio" name="q13" value="4"> Não cuidam da sua própria saúde.<br>
+            <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question14" class="question" style="display: none;">
+        <p>14. Pra você, o bom professor é aquele que...</p><br>
+            <input type="radio" name="q14" value="1"> Se preocupa com os alunos.<br>
+            <input type="radio" name="q14" value="2"> É comunicativo e organizado.<br>
+            <input type="radio" name="q14" value="3"> Utiliza novos meios em suas aulas.<br>
+            <input type="radio" name="q14" value="4"> Promove aulas em outros ambientes.<br>
+            <button onclick="showNextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <div id="question15" class="question" style="display: none;">
+        <p>15. Na sua turma você é...</p><br>
+            <input type="radio" name="q15" value="1"> O(A) que sempre procura o melhor para o grupo.<br>
+            <input type="radio" name="q15" value="2"> O(A) que se comunica com todos para combinar.<br>
+            <input type="radio" name="q15" value="3"> Aquele(a) conhecido(a) por inovar nas ideias.<br>
+            <input type="radio" name="q15" value="4"> Aquele(a) que prefere aulas práticas.<br>
+            <button onclick="showNextQuestion()">Resultados</button>
+    </div>
+
+    
+    <div id="result" class="question" style="display: none;">
+        <p id="vocational-result"></p>
+        <canvas id="resultChart"></canvas>
+    </div>
+    </div>
+
+    <script src="script2.js"></script>
+    <script>
+            function scrollToNext() {
+            window.scrollBy(10, window.innerHeight);
+        }
+    </script>
+    
+</body>
+</html>
